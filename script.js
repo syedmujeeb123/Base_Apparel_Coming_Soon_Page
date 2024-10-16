@@ -21,7 +21,11 @@ form.addEventListener("submit", function (e) {
   } else {
     window.location.reload();
     alert(`
-         Email: ${errorEmailValue}
+      Message sent!
+      
+      Thanks for completing the form we'll be in touch soon
+
+      Email: ${errorEmailValue}
         `);
   }
 });

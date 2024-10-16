@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Simple Tailwind Starter</title>
+    <style>
+      .error-outline {
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-primary-light-primary flex p-10 w-screen lg:ml-40 items-center min-h-screen"
+  >
+    <!-- Card-Cdontainer> -->
+    <div class="card-container flex">
+      <div class="md:w-1/2 space-y-8">
+        <div>
+          <img src="./images/logo.svg" class="mb-20" />
+          <img
+            src="./images/hero-mobile.jpg"
+            class="flex justify-center max-w-xs pr-4 mx-auto md:hidden"
+          />
+        </div>
+        <h1
+          class="md:max-w-[12px] text-center font-josefin font-semibold text-5xl tracking-[10px]"
+        >
+          <span class="text-primary-desaturated-red font-light tracking-[10px]"
+            >WE'RE</span
+          >
+          COMING SOON
+        </h1>
+        <p
+          class="max-w-4xl md:text-start text-center text-primary-desaturated-red font-semibold"
+        >
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <form class="relative">
+          <div>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email Address"
+              class="border mb-2 border-primary-desaturated-red py-3 px-4 w-full rounded-3xl"
+            />
+            <img
+              src="./images/icon-error.svg"
+              class="error-img absolute right-24 top-3 hidden"
+            />
+            <button
+              type="submit"
+              class="my-btn bg-primary-linear-color hover:shadow-xl shadow-pink-500 px-10 py-4 rounded-3xl absolute right-0 top-0"
+            >
+              <img src="./images/icon-arrow.svg" />
+            </button>
+            <label class="error-text ml-4 text-red-500 hidden"
+              >Please provide a valid email</label
+            >
+          </div>
+        </form>
+      </div>
+      <div class="md:w-1/2">
+        <img
+          src="./images/hero-desktop.jpg"
+          class="h-screen absolute right-0 top-0 md:block hidden"
+        />
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
